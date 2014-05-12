@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=0, target-densitydpi=device-dpi" />
+
+    <link rel="stylesheet" type="text/css" href="spec/lib/pagingSlider/main.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+
+</head>
+<body>
+<div id="wrapper">
+    <div class="slidepage-container myPageContainerClass">
+        <div id="badges-slidepage-1" page="1" class="psPage center current">
+            <div class="content">
+                <div style="height: 600px">
+                    <div>第一章 電腦通訊</div>
+                    <h2>1.1 填充題(5分)</h2>
+                    <p>A.銀行提款卡 B.磁帶 C.提取現金 D.電子貨幣 E.轉賬</p>
+                    <p>1.使用自動櫃員機可<input class="underlineInput"/>和<input class="underlineInput"/>。</p>
+
+                    <p>2.信用卡上附有<input class="underlineInput"/>記錄客戶的交易資料。</p>
+                    <p>3.使用易辦事(EPS)必須已擁有<input class="underlineInput"/>。</p>
+                    <p>4.八達通是香港通用的<input class="underlineInput"/>。</p>
+
+                    <h2>1.2 是非題(5分)</h2>
+                    <p><span style="width: 405px;float:left;">請判斷以下敘述是否正確。</span><span style="width: 80px;float:left;">√</span>×</p>
+                    <p><span style="width: 400px;float:left;">1.自動櫃員機是一部電腦。</span><span style="width: 80px;float:left;"><input type="checkbox"></span><input type="checkbox"></p>
+                    <p><span style="width: 400px;float:left;">2.八達通卡可以透支現金。</span><span style="width: 80px;float:left;"><input type="checkbox"></span><input type="checkbox"></p>
+                    <p><span style="width: 400px;float:left;">3.媽媽可以把她的信用卡借給兒子使用。</span><span style="width: 80px;float:left;"><input type="checkbox"></span><input type="checkbox"></p>
+                    <p><span style="width: 400px;float:left;">4.八達通的最高增值額是港幣一仟元。</span><span style="width: 80px;float:left;"><input type="checkbox"></span><input type="checkbox"></p>
+                    <p><span style="width: 400px;float:left;">5.學校圖書館可以使用POS系統借還書籍。</span><span style="width: 80px;float:left;"><input type="checkbox"></span><input type="checkbox"></p>
+                </div>
+            </div>
+        </div>
+        <div id="badges-slidepage-2" page="2" class="psPage right">
+            <div class="content">
+                <div class="center" style="height: 600px">
+                    <div> </div>
+                    <h2>1.4 短答題(8分)(每項2分)</h2>
+                    <p>1.舉出銷售點終端機(POS)系統的兩個商業應用例子。</p>
+                    <p>A.<input class="underlineInput" style="width: 400px"/></p>
+                    <p>B.<input class="underlineInput" style="width: 400px"/></p>
+
+                    <p>2.舉出POS系統的兩個優點。</p>
+                    <p>A.<input class="underlineInput" style="width: 400px"/></p>
+                    <p>B.<input class="underlineInput" style="width: 400px"/></p>
+
+                    <p>3.試舉出三種電子貨幣的例子。</p>
+                    <p>A.<input class="underlineInput" style="width: 400px"/></p>
+                    <p>B.<input class="underlineInput" style="width: 400px"/></p>
+                    <p>C.<input class="underlineInput" style="width: 400px"/></p>
+
+                    <p>4 與傳統消費模式相比，舉出易辦事(EPS)的其中一項優點。</p>
+                    <p>A.<input class="underlineInput" style="width: 400px"/></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer >
+    <div style="max-width: 800px; margin: 0 auto;" >
+        <img id="bb-nav-first" src="res/app/first.png" class="navbt" width="45" height="45" onclick="silderPage.setPage(1)"/>
+        <img id="bb-nav-prev" src="res/app/previous.png" class="navbt" width="45" height="45" onclick="silderPage.slidePageFrom('left')"/>
+        <input id="nav-num" value="1" style="width: 30px;height:25px;"/>
+        <img id="bb-nav-go" src="res/app/go.png" class="navbt" width="45" height="45" onclick="silderPage.setPage($('#nav-num').val())"/>
+        <img id="bb-nav-next" src="res/app/next.png" class="navbt" width="45" height="45" onclick="silderPage.slidePageFrom('right')"/>
+        <img id="bb-nav-last" src="res/app/last.png" class="navbt" width="45" height="45" onclick="silderPage.setPage(2)"/>
+    </div>
+</footer>
+
+<script src="spec/lib/jquery/jquery-2.1.1.js"></script>
+<script src="spec/lib/pagingSlider/quoJs/package/quo.js"></script>
+<script src="spec/lib/pagingSlider/fastclick.js"></script>
+<script src="spec/lib/pagingSlider/pagingSlider.js"></script>
+<script src="homework/js/homework.js"></script>
+
+
+</body>
+</html>
